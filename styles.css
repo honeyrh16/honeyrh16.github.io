@@ -162,7 +162,7 @@ body{
 }
 .form-actions{ display:flex; gap:12px; justify-content:flex-end; margin-top:6px; }
 
-
+/* FOOTER */
 .footer{ padding:20px 0; color:var(--muted); border-top:1px solid rgba(255,255,255,0.02); }
 .footer .container{ display:flex; justify-content:space-between; align-items:center; gap:14px; }
 
