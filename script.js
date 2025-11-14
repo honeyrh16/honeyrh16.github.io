@@ -1,5 +1,3 @@
-// script.js
-// Animations using GSAP. Make sure GSAP script is loaded with defer in HTML.
 document.addEventListener('DOMContentLoaded', () => {
   // set year
   document.getElementById('year').textContent = new Date().getFullYear();
@@ -80,4 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if(prefersReduced.matches) {
     gsap.globalTimeline.timeScale(0.2);
   }
+
+  // Blender images/videos reveal
+gsap.utils.toArray('.blender-grid img, .blender-grid video').forEach(el => {
+  gsap.from(el, {
+    scrollTrigger: {trigger: el, start: 'top 90%'},
+    opacity: 0,
+    y: 20,
+    duration: 0.8,
+    ease: 'power3.out'
+  });
+});
+
 });

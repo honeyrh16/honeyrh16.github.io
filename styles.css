@@ -61,6 +61,19 @@ body{
   font-weight:700;
 }
 
+.blender-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:16px;
+  margin-top:12px;
+}
+
+.blender-grid img, .blender-grid video{
+  width:100%;
+  border-radius:12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
 /* HERO */
 .hero{
   padding:64px 0;
